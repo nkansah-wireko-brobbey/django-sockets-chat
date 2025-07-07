@@ -3,7 +3,7 @@ import json
 
 class ChatConsumer(AsyncWebsocketConsumer):
     async def connect(self):
-        self.room_name = "general_chat"
+        self.room_name = "test_general_chat"
         await self.channel_layer.group_add(
             self.room_name,
             self.channel_name
